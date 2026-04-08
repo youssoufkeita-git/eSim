@@ -163,7 +163,7 @@ function installKicad
         fi
 
     else
-        kicadppa="kicad/kicad-6.0-releases"
+        kicadppa="kicad/kicad-8.0-releases"
     fi
 
     # Check if the PPA is already added
@@ -249,7 +249,7 @@ function installDependency
     pip3 install PyQt5  
 
     echo "Installing volare"
-    sudo apt-get xz-utils
+    sudo apt-get install -y xz-utils
     pip3 install volare
 }
 
